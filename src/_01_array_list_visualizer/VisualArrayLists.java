@@ -16,9 +16,19 @@ public class VisualArrayLists implements ActionListener {
 
 	public void addThingsToList() {
 		// 1. Add a bunch of items to our list (4 or 5 should be enough!)
+		list.add("sword");
+		list.add("axe");
+		list.add("pickaxe");
+		list.add("shovel");
+		list.add("bow");
 		
 		// 2. Set one item in our list to be something different
-		
+		for (int i = 0; list.size() > i; i++) {
+			String a = list.get(i);
+			if (a.contains("r")) {
+				list.set(i, "hi axe ");
+			}
+		}
 		// 3. Remove something from our list
 		
 		// 4. Print the size of our list
